@@ -74,4 +74,4 @@ async function cargarIncidencias() {
 
 filtro.addEventListener('change', cargarIncidencias);
 document.getElementById('recargar').addEventListener('click', cargarIncidencias);
-cargarIncidencias();
+void cargarIncidencias();
