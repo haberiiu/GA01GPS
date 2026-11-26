@@ -140,7 +140,7 @@
       precio: field('precio').valueAsNumber,
       disponible: field('disponible').checked,
     };
-    act(async () => {
+    void act(async () => {
       message('');
       const service = await request(id === null ? '' : '/' + id, id === null ? 'POST' : 'PUT', data);
       resetForm();
